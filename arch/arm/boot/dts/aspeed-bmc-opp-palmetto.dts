@@ -26,6 +26,16 @@
 			no-map;
 			reg = <0x47800000 0x00800000>; /* 8MB */
 		};
+		
+		coldfire_memory: codefire_memory@5ee00000 {
+			reg = <0x5ee00000 0x00200000>;
+			no-map;
+		};
+
+		flash_memory: region@5c000000 {
+			no-map;
+			reg = <0x5C000000 0x02000000>; /* 32MB */
+		};
 	};
 
 	leds {

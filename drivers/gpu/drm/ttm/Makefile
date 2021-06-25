@@ -9,4 +9,4 @@ ttm-y := ttm_memory.o ttm_tt.o ttm_bo.o \
 ttm-$(CONFIG_AGP) += ttm_agp_backend.o
 ttm-$(CONFIG_DRM_TTM_DMA_PAGE_POOL) += ttm_page_alloc_dma.o
 
-obj-$(CONFIG_DRM_TTM) += ttm.o
+obj-y += ttm.o

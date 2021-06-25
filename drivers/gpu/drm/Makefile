@@ -37,7 +37,7 @@ drm_vram_helper-y := drm_gem_vram_helper.o
 obj-y += drm_vram_helper.o
 
 drm_ttm_helper-y := drm_gem_ttm_helper.o
-obj-$(CONFIG_DRM_TTM_HELPER) += drm_ttm_helper.o
+obj-y += drm_ttm_helper.o
 
 drm_kms_helper-y := drm_bridge_connector.o drm_crtc_helper.o drm_dp_helper.o \
 		drm_dsc.o drm_probe_helper.o \
@@ -62,7 +62,7 @@ obj-$(CONFIG_DRM_MIPI_DBI) += drm_mipi_dbi.o
 obj-$(CONFIG_DRM_MIPI_DSI) += drm_mipi_dsi.o
 obj-$(CONFIG_DRM_PANEL_ORIENTATION_QUIRKS) += drm_panel_orientation_quirks.o
 obj-y			+= arm/
-obj-$(CONFIG_DRM_TTM)	+= ttm/
+obj-y	+= ttm/
 obj-$(CONFIG_DRM_SCHED)	+= scheduler/
 obj-$(CONFIG_DRM_TDFX)	+= tdfx/
 obj-$(CONFIG_DRM_R128)	+= r128/
